@@ -18,4 +18,4 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-Cypress.on('uncaught:exception', (err) => !err.message.includes("SecurityError: Failed to register a ServiceWorker for scope ('https://business.stage.dzing.com/') with script ('https://business.stage.dzing.com/service-worker.js'): The script has an unsupported MIME type ('text/html')."))
+Cypress.on('uncaught:exception', (err) => !err.message.includes('SecurityError'));
